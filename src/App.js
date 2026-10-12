@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Client from "./composants/Client.jsx";
+import Visiteur from "./composants/Visiteur.jsx";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function app(){
+  let c = true;
+  let name = "Zineb";
+  return(
+    <div>
+      {c ?<Client nom={name}/> : <Visiteur/>}
     </div>
   );
 }
-
-export default App;
+export default app;
