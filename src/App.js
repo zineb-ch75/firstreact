@@ -1,13 +1,11 @@
-import Client from "./composants/Client.jsx";
-import Visiteur from "./composants/Visiteur.jsx";
+import StagiaireList from "./components/StagiaireList";
 
-function app(){
-  let c = true;
-  let name = "Zineb";
-  return(
+function App() {
+  return (
     <div>
-      {c ?<Client nom={name}/> : <Visiteur/>}
+      <StagiaireList />
     </div>
   );
 }
-export default app;
+
+export default App;
