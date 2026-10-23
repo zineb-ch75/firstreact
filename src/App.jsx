@@ -1,10 +1,10 @@
-import MoodSelector from './composants/MoodSelector'
+import MainPage from "./Composants/MainPage";
+import "./App.css";
 
-function App () {
+export default function App() {
     return (
-        <div>
-            <MoodSelector />
+        <div className="app">
+            <MainPage />
         </div>
-    )
+    );
 }
-export default App;
