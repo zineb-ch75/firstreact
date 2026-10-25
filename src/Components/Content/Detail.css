@@ -1,0 +1,15 @@
+.Nom{
+    text-align : center;
+}
+.detail p{
+    margin:10px;
+    font-weight:bold;
+}
+.detail img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit: cover;
+    display:block;
+    margin:0 auto;
+}

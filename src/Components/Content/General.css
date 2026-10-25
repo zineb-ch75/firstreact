@@ -1,0 +1,32 @@
+
+.general {
+  width: 350px;
+}
+
+.titre {
+  font-weight:blood;
+ 
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.carre {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  margin-right: 8px;
+}
