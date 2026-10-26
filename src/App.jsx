@@ -1,11 +1,10 @@
-import Pseudo from "./Pseudo";
-import StudentProfile from "./StudentProfile.jsx";
-function App(){
-  return(
+import TestUseAxios from "./TestUseAxios";
+function App() {
+  return (
     <div>
-    <Pseudo/>
-    <StudentProfile/>
+      <h1>Test useAxios</h1>
+      <TestUseAxios />
     </div>
-  )
+  );
 }
 export default App;
