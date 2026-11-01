@@ -1,10 +1,19 @@
-import MainPage from "./Composants/MainPage";
-import "./App.css";
+import UserList from './Components/UserList';
 
-export default function App() {
-    return (
-        <div className="app">
-            <MainPage />
-        </div>
-    );
+
+function App() {
+  return (
+    <div >
+      <UserList/>
+      {/* <Route path="/UserCard/:id"  element={<UserCard/>}/>
+      <Route path="/Modifier/:id"  element={<Modifier/>}/>
+      <Route path="/Delete/:id"  element={<Delete/>}/> */}
+      
+
+
+      
+    </div>
+  );
 }
+
+export default App;
