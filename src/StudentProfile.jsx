@@ -5,26 +5,30 @@ function StudentProfile(){
     const[Filiere,setFiliere] = useState("");
     return(
         <div>
+            <label>nom :</label>
         <input
          type="text" 
+         placeholder="nom"
          value={Nom}
          onChange={(e)=> setNom(e.target.value)}
          />
-
+        <label>filiere :</label>
         <input 
         type="text" 
+        placeholder="filiere"
         value={Filiere}
         onChange={(e)=> setFiliere(e.target.value)}
         />
-        {visible === true &&
+        {visible === true ?
         (
             <div>
-                {Nom}
-                {Filiere}
+                <p> NOM : {Nom}</p>
+                <p> filiere :{Filiere}</p>
             </div>
-        )
-        }
-        <button></button>
+        ):(<p>les informations sont masquees</p>)
+    }<button onClick={()=>setVisible(!visible)}>
+        {visible? "masquer mon profile":"afficher mon profile"}
+    </button>
         </div>
     );
 }
